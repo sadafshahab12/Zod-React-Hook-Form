@@ -1,9 +1,15 @@
 "use client";
 
+import Form from "./components/Form";
+import SnowFall from "./components/ui/SnowFall";
+
 function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hello!</h1>
+    <main className="relative flex h-screen flex-col items-center justify-center p-4 bg-slate-800">
+      <SnowFall />
+      <div className="relative z-10">
+        <Form />
+      </div>
     </main>
   );
 }
