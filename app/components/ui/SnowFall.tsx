@@ -11,11 +11,11 @@ const SnowFall: React.FC = () => {
       snowFlake.className = "snowflake";
 
       snowFlake.style.left = `${Math.random() * 100}vw`;
-      snowFlake.style.width = `${Math.random() * 12 + 10}px`; // Larger dots
+      snowFlake.style.width = `${Math.random() * 5 + 5}px`; // Larger dots
       snowFlake.style.height = snowFlake.style.width; // Make it a circle
       snowFlake.style.animationDuration = `${Math.random() * 3 + 2}s`;
       snowFlake.style.opacity = `${Math.random() * 0.8 + 0.2}`;
-      snowFlake.style.fontSize = `${Math.random() * 10 + 10}px`;
+      snowFlake.style.fontSize = `${Math.random() * 5 + 5}px`;
       container.appendChild(snowFlake);
 
       snowFlake.addEventListener("animationend", () => {
